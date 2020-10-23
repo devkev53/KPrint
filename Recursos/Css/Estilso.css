@@ -1,0 +1,304 @@
+body{
+	margin: 0px 0px;
+	background-color: #E2E2E2;
+	background: #E2E2E2;
+}
+.title{
+	font-family: 'IM Fell Great Primer SC';
+	font-weight: bold;
+}
+div .contenido{
+	background: #FFF;
+}
+.barra_navegacion .barra_title{
+	font-family: 'IM Fell Great Primer SC';
+	font-weight: bold;
+	text-decoration: none;
+	color: #000;
+}
+.barra_navegacion{
+	margin-top: 35px;
+	border-bottom: 2px #0084C8;
+}
+.off{
+	color: #AE0000;
+	text-decoration: none;
+}
+.off:hover{
+	text-decoration: none;
+	background: #800000;
+	border-radius: 5px;
+	color: white;	
+	padding: 5px;
+}
+
+.on{
+	text-decoration: none;
+}
+.on:hover{
+	text-decoration: none;
+	background: #00FF30;
+	border-radius: 5px;
+	color: white;	
+	padding: 5px;
+}
+
+/* Menu */
+.submenu{
+	font-family: 'IM Fell Great Primer SC';
+}
+
+.submenu li:hover{
+	background: #e2e2e2;
+	border-radius: 5px;
+}
+
+/* -- Main -- */
+
+.porfolio{
+	box-shadow: 2px 2px 10px gray;
+	margin-top: 40px;
+	background: #FFF;
+	border-top: 6px solid #1B558C;
+}
+.tile{
+	font-family: 'IM Fell Great Primer SC';
+	font-weight: bold;
+	padding: 15px;
+	color: #083967;
+}
+.contenido_main{
+	padding: 0 50px 20px;
+}
+
+
+
+/*-- Footer --*/
+.redes{
+	padding: 40px 0;
+	margin-bottom: 40px;
+}
+
+.redes .icono{
+	width: 100px;
+	height: 100px;
+	font-size: 40px;
+	line-height: 100px;
+	color: #fff;
+	text-align: center;
+	background: #cbcbcb;
+	display: inline-block;
+	margin: 0 20px;
+	text-decoration: none;
+	border-radius: 100px;
+	transition: all .3s ease;
+
+}
+
+.redes .icon-facebook{ background: #3b5998; }
+.redes .icon-github{ background: #8E1BF0; }
+.redes .icon-instagram{ background: #E79A20; }
+
+.redes .icon-facebook:hover{ opacity: .7; }
+.redes .icon-github:hover{ opacity: .7; }
+.redes .icon-instagram:hover{ opacity: .7; }
+
+
+/* ---- Pagina de Contacto --- */
+.form-contacto textarea{
+	height: 150px;
+	min-height: 150px;
+	max-height: 250px;
+}
+.title-whats{
+	font-family: 'IM Fell Great Primer SC';
+	font-weight: bold;
+}
+.what_link{
+	text-decoration: none;
+	color: #25d366;
+}
+.what_link:hover{
+	text-decoration: none;
+	color: #128c7e;
+}
+.what_link span{
+	font-size: 50px;
+
+}
+
+/*  ---   DESARROLLADORES   --- */
+/*
+#preview_img{
+	width: 100px;
+	height: 100px;
+	max-width: 100px;
+	border: 3px solid white;
+	border-radius: 150px;
+	box-shadow: 2px 2px 2px gray;
+	overflow: hidden;
+}*/
+.custom-file-label::after {
+	font-family: "DescargasIconmonKP";
+	content: "\fbf3";
+}
+#custom_btn{
+	padding: 5px;
+	color: white;
+	background-color: #3A3D6D;
+	border: 1px solid #00488B;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 2px 2px 5px gray;
+}
+
+#btn_edit_img{
+	padding: 5px;
+	color: white;
+	background-color: #FFBA00;
+	border: 1px solid #E79800;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 2px 2px 5px gray;
+}
+#btn_edit_img:hover{
+	border: 1px solid #E79800;
+	background-color: #FFA800;
+	box-shadow: 2px 2px 5px #000;
+}
+
+#custom_btn:hover{
+	border: 1px solid #034C90;
+	background-color: #181D7E;
+	box-shadow: 2px 2px 5px #000;
+}
+
+#custom_text, #text_edit_img{
+	margin-left: 5px;
+	font-family: sans-serif;
+	color: #aaa;
+}
+
+#info_dev{
+    resize: none;
+}
+.dev_card{
+	border-left: 4px solid #1C5172;
+	border-bottom: 4px solid #1C5172;
+	border-radius: 8px;
+	padding: 2px;
+	box-shadow: 2px 2px 5px gray;
+}
+.card-body{
+	height: 110px !important;
+	min-height: 110px !important;
+	padding: .75rem;
+}
+.info{
+	color: #727272;
+	font-size: .90rem;
+}
+.img_container{
+	margin: 5px;
+	padding: 0px;
+	max-width: 90px;
+	max-height: 90px;
+	width: 90px;
+	height: 90px;
+}
+.img_container img{
+	width: 100%;
+	height: 100%;
+	border: 4px solid white;
+	box-shadow: 1px 1px 5px;
+}
+.card-footer {
+    padding: .35rem 1.25rem !important	;
+    background: #fff;
+    border-top: 2px solid rgba(0,0,0,.125);
+}
+.btn_dev, .btn_cont{
+	margin: 0px;
+	height: 3rem;
+	width: 3rem;
+	border-radius: 150px;
+	box-shadow: 2px 2px 2px gray;
+}
+.dev_edit:hover{
+	background: #FF8A00;
+	box-shadow: 2px 2px 2px #000;
+}
+.dev_edit{
+	background: #FFAE00;
+}
+.dev_delete{
+	background: #DA0000;
+	color: white;
+}
+.dev_delete:hover{
+	color: white;
+	background: #A40000;
+	box-shadow: 2px 2px 2px #000;
+}
+.edit{
+	border-left: 4px solid orange;
+	border-bottom: 4px solid orange;
+}
+.new{
+	border-left: 4px solid #0FCE00;
+	border-bottom: 4px solid #0FCE00;
+}
+
+/** --- CREACION DE PROYECTO --- **/
+#preview_img_proyecto{
+	max-width: 20rem;
+	max-height: 13rem;
+}
+#vista_img_pro{
+	width: auto;
+	height: auto;
+    max-height: 13rem;
+    max-width: 20rem;
+}
+
+/**		VISTA DE PROYECTO		**/
+.contenedor_proyecto{
+	color: #000;
+	text-decoration: none;
+	min-height: 18rem;
+	background: #000;
+	margin-bottom: 20px;
+	border-radius: 15px;
+}
+.contenedor_proyecto:hover{
+	color: #000;
+	text-decoration: none;
+}
+.proyecto_pre{
+	border-left: 5px solid #3B6A92;
+	border-bottom: 5px solid #3B6A92;
+	margin-right: -15px;
+	margin-left: -15px;
+	box-shadow: 2px 2px 15px gray;
+	border-radius: 15px;
+}
+.proyecto_pre:hover{
+	opacity: 0.6;
+}
+.img_admin{
+	border-right: 1px solid #D7D7D7;
+}
+.informacion{
+	padding: 10px;
+	min-height: 18rem;
+	border-right: 1px solid #D7D7D7;
+	box-shadow: 0px 0px 10px gray;
+}
+
+/*	--- VISTA DEL PROYECTO INDIVIDUAL --- 	*/
+.img_avatars_devs_pro{
+	max-height: 7rem;
+	max-width: 7rem;
+	min-height: 7rem;
+	min-width: 7rem;
+}
