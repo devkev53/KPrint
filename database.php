@@ -10,8 +10,7 @@ try {
                 "localhost:3306","root","1234");
         
         if (!$conn) {
-            exit('Connect Error (' . mysqli_connect_errno() . ') '
-                   . mysqli_connect_error());
+            exit(exit(header('location: ../500_page'));
         }
         //set the default client character set 
         mysqli_set_charset($conn, 'utf-8');
