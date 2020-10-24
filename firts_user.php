@@ -90,7 +90,7 @@
 		// AJAX para crear el usuario
 	$('#add_user_form').on('submit', function (event) {
 			event.preventDefault();
-			// alert($(this).serialize());
+			alert($(this).serialize());
 			var p = $('input[name=contraseña1]').val();
 			var p2 = $('input[name=contraseña2]').val();
 			if (p==p2) {
