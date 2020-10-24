@@ -3,6 +3,17 @@
 
 	// Importamos la coneccion a la DB
 	require '../database.php';
+	
+	// Consultamos los usuarios
+	$query_users = "SELECT * FROM usuario";
+	
+	// Realizamos la consulta
+	$users = mysqli_query($conn, $query_users);
+
+	// No de usuarios encontados
+	$no_Users = $users->num_rows;
+	
+	echo $no_Users;
 
 	$codigo_pro=$_GET['identificador'];
 
