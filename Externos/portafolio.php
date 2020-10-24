@@ -5,7 +5,7 @@
 	require '../database.php';
 
 	// Consultamos los usuarios
-	$query_users = "SELECT * FROM usuario";
+	$query_users = "SELECT * FROM heroku_59b4c55ab4de36a.departamento";
 	
 	// Realizamos la consulta
 	$users = mysqli_query($conn, $query_users);
