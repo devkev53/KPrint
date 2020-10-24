@@ -103,7 +103,7 @@
 				}).done(function(resp){
 					if (!resp.error) {
 						console.log(resp);
-						location.reload();
+						location..href = "Externos.login.php";
 					}else{
 						$.alert({
 							icon: 'icon-error',
