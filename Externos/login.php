@@ -1,6 +1,6 @@
 <?php
 	// Importamos la coneccion a la DB
-	require 'database.php';
+	require '../database.php';
 	
 	// Consultamos los usuarios
 	$query_users = "SELECT * FROM usuario";
