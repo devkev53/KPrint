@@ -66,7 +66,9 @@
 					      		<option value="0">Administrador</option>
 					      		<option value="1">Desarrollador</option>
 					      	</select>
+						<div class="d-flex justify-content-center">
 					      	<input type="submit" class="btn btn-success" value="Crear Usuario">
+						</div>
 					    </form>
 					</div>
 				</div>
@@ -78,11 +80,11 @@
 	<?php //require 'footer.php' ?>
 
 	<!-- JQuery 3.5.1 -->
-	<script src="../Recursos/Js/jquery-3.5.1.min.js"></script>
+	<script src="Recursos/Js/jquery-3.5.1.min.js"></script>
 	<!-- Bootstrap JS -->
-	<script src="../Recursos/Bootstrap/js/bootstrap.min.js"></script>
+	<script src="Recursos/Bootstrap/js/bootstrap.min.js"></script>
 	<!-- CARGANDO LOS RECURSOS DE JQUERYCONFIRM -->
-	<script src="../Recursos/jquery-confirm/js/jquery-confirm.js"></script>
+	<script src="Recursos/jquery-confirm/js/jquery-confirm.js"></script>
 
 	<script	>
 		// AJAX para crear el usuario
