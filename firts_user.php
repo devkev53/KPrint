@@ -96,14 +96,14 @@
 			if (p==p2) {
 				$.ajax({
                 type: "POST",
-                url: 'Internos/ajax_crear_usuario.php',
+                url: 'ajax_firts_user.php',
                 data: $(this).serialize(),
                 beforeSend: function(){
                 } 
 				}).done(function(resp){
 					if (!resp.error) {
 						console.log(resp);
-						//location.href = "Externos.login.php";
+						<?php header('Location: Externos/portafolio.php'); ?>
 					}else{
 						$.alert({
 							icon: 'icon-error',
