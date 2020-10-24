@@ -56,15 +56,18 @@
 				
 				<div class="row d-flex justify-content-center">
 					<div class="col-12 col-lg-4">
-						<input class="form-control mb-2" name="usuario" id="username" type="text" placeholder="Nombre de Usuario" required>
-						<input class="form-control mb-2" name="correo" type="email" id="user_email" placeholder="Correo Electronico" required>
-						<input class="form-control mb-2" name="contraseña1" id="p1" type="password" placeholder="Contraseña" required>
-				      	<input class="form-control mb-2" name="contraseña2" id="p2" type="password" placeholder="Veirificacion de Contraseña" required>
-						<label for="tipo_user">Tipo de Usuario:</label>
-				      	<select class="form-control mb-2" name="tipo" id="tipo_user">
-				      		<option value="0">Administrador</option>
-				      		<option value="1">Desarrollador</option>
-				      	</select>
+						<form action="" id="add_user_form">
+							<input class="form-control mb-2" name="usuario" id="username" type="text" placeholder="Nombre de Usuario" required>
+							<input class="form-control mb-2" name="correo" type="email" id="user_email" placeholder="Correo Electronico" required>
+							<input class="form-control mb-2" name="contraseña1" id="p1" type="password" placeholder="Contraseña" required>
+					      	<input class="form-control mb-2" name="contraseña2" id="p2" type="password" placeholder="Veirificacion de Contraseña" required>
+							<label for="tipo_user">Tipo de Usuario:</label>
+					      	<select class="form-control mb-2" name="tipo" id="tipo_user">
+					      		<option value="0">Administrador</option>
+					      		<option value="1">Desarrollador</option>
+					      	</select>
+					      	<input type="submit" class="btn btn-success" value="Crear Usuario">
+					    </form>
 					</div>
 				</div>
 				
