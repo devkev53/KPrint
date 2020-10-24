@@ -102,7 +102,7 @@
                 } 
 				}).done(function(resp){
 					if (!resp.error) {
-						//console.log(resp);
+						console.log(resp);
 						//location.href = "Externos.login.php";
 					}else{
 						$.alert({
