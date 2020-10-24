@@ -67,7 +67,7 @@
 					      		<option value="1">Desarrollador</option>
 					      	</select>
 						<div class="d-flex justify-content-center">
-					      	<input type="submit" class="btn btn-success" value="Crear Usuario">
+					      	<input type="submit" class="btn btn-success mb-4" value="Crear Usuario">
 						</div>
 					    </form>
 					</div>
@@ -102,8 +102,8 @@
                 } 
 				}).done(function(resp){
 					if (!resp.error) {
-						console.log(resp);
-						location.href = "Externos.login.php";
+						//console.log(resp);
+						//location.href = "Externos.login.php";
 					}else{
 						$.alert({
 							icon: 'icon-error',
