@@ -22,7 +22,7 @@
 
 	// No de Proyectos encontados
 	$no_pro = $pro->num_rows;
-	//echo $no_pro;
+	echo $no_pro;
 	$pro_x_pagina = 3;
 	// No de paginas a mostrar
 	$paginas = ceil($no_pro/$pro_x_pagina);
