@@ -52,9 +52,9 @@
 
 			$asunto = "Bienvenido a KodePrint";
 
-			if (enviar_email($email, $user, $asunto, $cuerpo)) {
-				echo json_encode(array('error' => false));
-			}
+			//if (enviar_email($email, $user, $asunto, $cuerpo)) {
+			//	echo json_encode(array('error' => false));
+			//}
 
 			// Antes de crear el profesor como ya existe el usuario buscamos el codigo del usuario
 			
