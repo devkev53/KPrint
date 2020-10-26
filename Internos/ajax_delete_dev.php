@@ -4,6 +4,10 @@
 	$inline = $_POST['usuario_inline'];
 
 	echo $inline;
+	echo "</hr>";
+	echo $codigo;
+	echo "</hr>";
+	echo $nombres;
 
 	// Hacemos la coneccion a la DB
 	require '../database.php';
@@ -12,6 +16,7 @@
 	$dev = mysqli_query($conn, "SELECT * FROM heroku_59b4c55ab4de36a.desarrollador WHERE codigo =$codigo OR nombres='$nombres'");
 	
 	if($dev){echo "La consulta fue exitosa";}else{echo "Error en la consulta";}
+	echo "</hr>";
 	
 	// Extraemos el dato
 	$extraido = mysqli_fetch_array($dev); 
@@ -27,6 +32,7 @@
 	if (mysqli_num_rows($user) > 0) {
 
 		echo "Encontro un Usuario";
+		echo "</hr>";
 
 		// Eliminamos el dato que se encontro
 		$user_delete = mysqli_query($conn, "DELETE FROM heroku_59b4c55ab4de36a.usuario WHERE codigo=$codigo_user");
@@ -36,6 +42,7 @@
 	// Realizando la consulta
 	$dev_con = mysqli_query($conn, "DELETE FROM heroku_59b4c55ab4de36a.desarrollador WHERE codigo=$codigo");		
 	if($dev_con){echo "Se elimino el desarrollador";}else{echo "Error en la consulta";}
+	echo "</hr>";
 
 	// Verificamos si el usuario que se elimino era el usuario en linea
 	/*if ($user==$inline) {
