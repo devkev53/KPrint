@@ -4,6 +4,14 @@
 	// Importamos la coneccion a la DB
 	require '../database.php';
 
+	// Realizamos la consulta
+	$users = mysqli_query($conn, $query_users);
+
+	// No de usuarios encontados
+	$no_Users = $users->num_rows;
+	
+	echo $no_Users;
+
 	// Consultamos los Proyectos
 	$query_pro = "SELECT * FROM heroku_59b4c55ab4de36a.proyecto";
 
