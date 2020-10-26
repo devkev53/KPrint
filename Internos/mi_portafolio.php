@@ -3,7 +3,7 @@
 
 	if (isset($_SESSION['usuario'])) {
 		if ($_SESSION['usuario']['tipo'] != 1) {
-			header('location: ../Externos/login');
+			header('location: ../Externos/login.php');
 		}
 	}else{
 		header('Location: ../Externos/login');
