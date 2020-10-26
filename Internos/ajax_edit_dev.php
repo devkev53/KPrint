@@ -74,7 +74,7 @@
 		$update_dev = mysqli_query($conn, $query_dev_edit);
 
 	}
-	header('location: ../Internos/desarrolladores');
+	header('location: ../Internos/desarrolladores.php');
 
 	/*
 	// Recibimos los datos de la imagen
