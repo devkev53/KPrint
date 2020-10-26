@@ -33,8 +33,8 @@
 
 	// Verificamos si el usuario que se elimino era el usuario en linea
 	if ($user==$inline) {
-		header('location: ../logout');
+		header('location: ../logout.php');
 	}else{
-		header('location: ../Internos/desarrolladores');
+		header('location: ../Internos/desarrolladores.php');
 	}
 ?>
