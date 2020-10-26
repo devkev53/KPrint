@@ -249,12 +249,12 @@
 		        </button>
 		      </div>
 		      <div class="modal-body">
-		      	<div class="col-12 text-uppercase">
+		      	<div class="col-12">
 		      		<input type="text" name="usuario" id="inline_user" hidden="hidden">
-		      		<input type="text" name="nombre" class="form-control mb-3" placeholder="Ingrese el Nombre o Alias del Proyecto" required>
+		      		<input type="text" name="nombre" class="form-control mb-3 text-uppercase" placeholder="Ingrese el Nombre o Alias del Proyecto" required>
 		      		<input type="text" name="video" class="form-control mb-3" placeholder="Ingrese una url para mostrar un video">
 		      		<div>
-						<textarea name="bio" class="form-control" rows="3" id="info_dev" maxlength="800" placeholder="Ingrese una descripcion de lo que es este proyecto..!" required></textarea>
+						<textarea name="bio" class="form-control text-uppercase" rows="3" id="info_dev" maxlength="800" placeholder="Ingrese una descripcion de lo que es este proyecto..!" required></textarea>
 						<div id="contador" align="right" style="color: #aaa;">0/800</div>
 					</div>
 					<?php mostrarDevs() ?>
