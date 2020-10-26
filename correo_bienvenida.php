@@ -47,6 +47,16 @@
 					<p style='color: #b3b3b3; font-size: 12px; text-align: center; margin: 30px 0 0;'><small>KodePrint 2020</small></p>
 				</td>
 			</tr>
+			<tr>
+				<td style='background-color: #ecf0f1'>
+					<div style='color: #34495e; margin: 0% 10% 0%; text-align: justify; font-family: sans-serif'>
+						<p style=''>Enviado desde: <b> <?php echo php_uname(); ?> </b></p>
+					</div>
+					<div style='color: #34495e; margin: 0% 10% 0%; text-align: justify; font-family: sans-serif'>
+						<p style=''>Fecha: <b> <?php echo date('l \t\h\e jS'); ?> </b></p>
+					</div>
+				</td>
+			</tr>
 		</table>
 		";
 
