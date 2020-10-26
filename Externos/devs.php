@@ -36,7 +36,9 @@
 	$dev_x_pagina = 4;
 	// No de paginas a mostrar
 	$paginas = ceil($no_dev/$dev_x_pagina);
-	//echo $paginas;
+	if ($paginas<=0) {
+		$paginas += 1;
+	}
 
 	// Validando para los paginadores
 	if (!$_GET) {
