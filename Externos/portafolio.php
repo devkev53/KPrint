@@ -13,7 +13,7 @@
 	// No de usuarios encontados
 	$no_Users = $users->num_rows;
 	
-	echo $no_Users;
+	//echo $no_Users;
 
 	// Consultamos los Proyectos
 	$query_pro = "SELECT * FROM heroku_59b4c55ab4de36a.proyecto";
