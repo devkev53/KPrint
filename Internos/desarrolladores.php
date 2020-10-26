@@ -719,9 +719,9 @@
 		$('#inline').val(user_inline);
 		$('#name_del').val(nombre);
 		var name = nombre;
-		alert($('#codigo_del').val());
-		alert($('#name_del').val());
-		alert(codigo);
+		//alert($('#codigo_del').val());
+		//alert($('#name_del').val());
+		//alert(codigo);
 		
 		console.log(name);
 		var ruta = 'uploads/avatares/' + img;
