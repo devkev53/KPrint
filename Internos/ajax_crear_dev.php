@@ -25,7 +25,7 @@
 	// Hacemos la coneccion a la DB
 	require '../database.php';
 
-	require '../prueba_correo.php';
+	//require '../prueba_correo.php';
 	require '../correo_bienvenida.php';
 
 	// vamos a validar si el usuario no exist
