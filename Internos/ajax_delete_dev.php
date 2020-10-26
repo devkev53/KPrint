@@ -9,7 +9,7 @@
 	// Realizando la consulta de BUSCEDA de Desarrollador
 	$dev = mysqli_query($conn, "SELECT * FROM heroku_59b4c55ab4de36a.desarrollador WHERE codigo =$codigo OR nombres='$nombres'");
 	
-	if($dev){echo "La consulta fue exitosa";}else{echo "Error en la consulta";}
+	//if($dev){echo "La consulta fue exitosa";}else{echo "Error en la consulta";}
 	
 	// Extraemos el dato
 	$extraido = mysqli_fetch_array($dev); 
@@ -27,18 +27,16 @@
 		echo "Encontro un Usuario";
 
 		// Eliminamos el dato que se encontro
-		//$user_delete = mysqli_query($conn, "DELETE FROM heroku_59b4c55ab4de36a.usuario WHERE codigo=$codigo_user");
+		$user_delete = mysqli_query($conn, "DELETE FROM heroku_59b4c55ab4de36a.usuario WHERE codigo=$codigo_user");
 	}
 
 	// Realizando la consulta
-	//$dev_con = mysqli_query($conn, "DELETE FROM heroku_59b4c55ab4de36a.desarrollador WHERE codigo=$codigo");
+	$dev_con = mysqli_query($conn, "DELETE FROM heroku_59b4c55ab4de36a.desarrollador WHERE codigo=$codigo");
 
 	// Verificamos si el usuario que se elimino era el usuario en linea
-/*
 	if ($user==$inline) {
 		header('location: ../logout.php');
 	}else{
 		header('location: ../Internos/desarrolladores.php');
 	}
-	*/
 ?>
