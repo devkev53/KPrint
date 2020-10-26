@@ -4,6 +4,9 @@
 	// Importamos la coneccion a la DB
 	require '../database.php';
 
+	// Consultamos los Proyectos
+	$query_users = "SELECT * FROM heroku_59b4c55ab4de36a.usuario";
+
 	// Realizamos la consulta
 	$users = mysqli_query($conn, $query_users);
 
