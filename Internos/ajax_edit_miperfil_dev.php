@@ -76,7 +76,7 @@
 		$update_dev = mysqli_query($conn, $query_dev_edit);
 
 	}
-	header('location: ../Internos/mi_perfil');
+	header('location: ../Internos/mi_perfil.php');
 
 	/*
 	// Recibimos los datos de la imagen
