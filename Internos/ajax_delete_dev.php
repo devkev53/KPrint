@@ -7,7 +7,7 @@
 	require '../database.php';
 
 	// Realizando la consulta de BUSCEDA de Desarrollador
-	$dev = mysqli_query($conn, "SELECT * FROM heroku_59b4c55ab4de36a.desarrollador WHERE codigo ='$codigo' OR nombres='$nombres'");
+	$dev = mysqli_query($conn, "SELECT * FROM heroku_59b4c55ab4de36a.desarrollador WHERE codigo =$codigo OR nombres='$nombres'");
 	
 	if($dev){echo "La consulta fue exitosa";}else{echo "Error en la consulta";}
 	
