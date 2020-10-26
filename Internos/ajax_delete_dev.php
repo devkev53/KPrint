@@ -23,15 +23,16 @@
 	if (mysqli_num_rows($user) > 0) {
 
 		echo "Encontro un Usuario";
+		echo gettype ( $codigo_user );
 
 		// Eliminamos el dato que se encontro
-		$user_delete = mysqli_query($conn, "DELETE FROM heroku_59b4c55ab4de36a.usuario WHERE codigo=$codigo_user");
-		if($user_delete){ echo "Se Elimino Correctamente el usuario";}
+		//$user_delete = mysqli_query($conn, "DELETE FROM heroku_59b4c55ab4de36a.usuario WHERE codigo=$codigo_user");
+		echo "DELETE FROM heroku_59b4c55ab4de36a.usuario WHERE codigo=$codigo_user";
 	}
 
 	// Realizando la consulta
-	$dev_con = mysqli_query($conn, "DELETE FROM heroku_59b4c55ab4de36a.desarrollador WHERE codigo=$codigo");
-	if($dev_con){ echo "Se Elimino Correctamente el Desarrollador";}
+	//$dev_con = mysqli_query($conn, "DELETE FROM heroku_59b4c55ab4de36a.desarrollador WHERE codigo=$codigo");
+	//if($dev_con){ echo "Se Elimino Correctamente el Desarrollador";}
 	
 	//Verificamos si el usuario que se elimino era el usuario en linea
 	/*if ($user==$inline) {
