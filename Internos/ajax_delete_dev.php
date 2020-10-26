@@ -4,7 +4,7 @@
 	$inline = $_POST['usuario_inline'];
 	
 	session_start();
-	$is_inline = $_SESSION['usuario']['usuario'];
+	$is_inline = $_SESSION['usuario']['codigo'];
 
 	// Hacemos la coneccion a la DB
 	require '../database.php';
@@ -24,7 +24,7 @@
 
 	// Validamos si nuestra consulta trajo algun resultado
 	if (mysqli_num_rows($user) > 0) {
-
+		
 		// Realizando la consulta
 		$dev_con = mysqli_query($conn, "DELETE FROM heroku_59b4c55ab4de36a.desarrollador WHERE codigo=$codigo");
 		
@@ -33,7 +33,7 @@
 	}
 	
 	//Verificamos si el usuario que se elimino era el usuario en linea
-	if ($is_inline==$inline) {
+	if ($is_inline==$codigo_user) {
 		header('location: ../logout.php');
 	}else{
 		header('location: ../Internos/desarrolladores.php');
