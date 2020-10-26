@@ -80,5 +80,5 @@
 
 		}
 	}
-	header('location: ../Internos/desarrolladores');
+	header('location: ../Internos/desarrolladores.php');
 ?>
