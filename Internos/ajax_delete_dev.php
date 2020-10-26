@@ -30,12 +30,12 @@
 
 		// Eliminamos el dato que se encontro
 		$user_delete = mysqli_query($conn, "DELETE FROM heroku_59b4c55ab4de36a.usuario WHERE codigo=$codigo_user");
-		if($user){echo "Se elimino el usuario";}else{echo "No fue posible eliminar el usuario";
+		if($user){echo "Se elimino el usuario";}else{echo "No fue posible eliminar el usuario";}
 	}
 
 	// Realizando la consulta
 	$dev_con = mysqli_query($conn, "DELETE FROM heroku_59b4c55ab4de36a.desarrollador WHERE codigo=$codigo");		
-	if($dev_con){echo "Se elimino el desarrollador";}else{echo "Error en la consulta";
+	if($dev_con){echo "Se elimino el desarrollador";}else{echo "Error en la consulta";}
 
 	// Verificamos si el usuario que se elimino era el usuario en linea
 	/*if ($user==$inline) {
