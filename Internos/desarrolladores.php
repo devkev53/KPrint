@@ -410,8 +410,8 @@
 				</div>
 	      	</div>
 	      	<!-- DATOS OCULTOS DEL FORM -->
-	      	<input type="text" name="codigo" id="codigo" hidden="hiden">
-	      	<input type="text" name="nombres" id="name" hidden="hiden">
+	      	<input type="text" name="codigo" id="codigo_del" hidden="hiden">
+	      	<input type="text" name="nombres" id="name_del" hidden="hiden">
 	      	<input type="text" name="usuario_inline" id="inline" hidden="hiden">
 	      	<div class="container">
 	      		<small id="eliminar_content">Si elimina este desarrollador tambien eliminara el usuario de este sistema</small>
@@ -715,17 +715,21 @@
 		// Tomamos el usuario qeu esta activo en este momento
 		user_inline = '<?php echo $_SESSION['usuario']['usuario'] ?>';
 		//var fullname = nombre+' '+apellido;
-		$('#codigo').val(codigo);
+		$('#codigo_del').val(codigo);
 		$('#inline').val(user_inline);
-		$('#name').val(nombre);
+		$('#name_del').val(nombre);
 		var name = nombre;
+		alert($('#codigo_del').val());
+		alert($('#name_del').val());
+		alert(codigo);
+		
 		console.log(name);
 		var ruta = 'uploads/avatares/' + img;
 		var span = document.getElementById('delete_dev_name');
 		document.getElementById('img_dev_delete').setAttribute('src', ruta);
 		span.innerHTML = name + ' ' + apellido;
 		$('#delete_dev_modal').modal('show');
-		// Ajax para eliminar el dev	
+		// Ajax para eliminar el dev
 	};
 
 	// AJAX para crear el desarrollador
