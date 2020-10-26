@@ -2,6 +2,9 @@
 	$codigo = $_POST['codigo'];
 	$nombres = $_POST['nombres'];
 	$inline = $_POST['usuario_inline'];
+	
+	session_start();
+	$is_inline = $_SESSION['usuario']['usuario'];
 
 	// Hacemos la coneccion a la DB
 	require '../database.php';
@@ -30,7 +33,7 @@
 	}
 	
 	//Verificamos si el usuario que se elimino era el usuario en linea
-	if ($user==$inline) {
+	if ($is_inline==$inline) {
 		header('location: ../logout.php');
 	}else{
 		header('location: ../Internos/desarrolladores.php');
