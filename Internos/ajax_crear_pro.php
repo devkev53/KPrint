@@ -4,7 +4,7 @@
 
 	$nombre = strtoupper($_POST['nombre']); 	
 	$descripcion = strtoupper($_POST['bio']); 	
-	$url_video = strtoupper($_POST['video']); 	
+	$url_video = $_POST['video']; 	
 	$devs = $_POST['devs']; 	
 	$codigousuario = strtoupper($_POST['usuario']);
 	// Datos de la Imagen
