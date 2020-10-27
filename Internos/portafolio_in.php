@@ -3,10 +3,10 @@
 
 	if (isset($_SESSION['usuario'])) {
 		if ($_SESSION['usuario']['tipo'] != 0) {
-			header('location: ../Externos/login');
+			header('location: ../Externos/login.php');
 		}
 	}else{
-		header('Location: ../Externos/login');
+		header('Location: ../Externos/login.php');
 	}
 	
 	// Importamos la coneccion a la DB
@@ -126,7 +126,7 @@
 								<?php 		while ($row = mysqli_fetch_array($pro_pag)) {?>
 									<div class="container contenedor_total d-flex justify-content-center">
 
-										<a class="d-flex col-12 col-lg-10 contenedor_proyecto" data-toggle="tooltip" data-placement="top" title="Ver Datos del Proyecto" href="proyecto_in?identificador=<?php echo $row['codigo'] ?>">
+										<a class="d-flex col-12 col-lg-10 contenedor_proyecto" data-toggle="tooltip" data-placement="top" title="Ver Datos del Proyecto" href="proyecto_in.php?identificador=<?php echo $row['codigo'] ?>">
 											<div class="bg-white proyecto_pre d-flex align-items-center">
 
 												<!-- Informacion -->

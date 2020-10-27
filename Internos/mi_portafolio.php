@@ -6,7 +6,7 @@
 			header('location: ../Externos/login.php');
 		}
 	}else{
-		header('Location: ../Externos/login');
+		header('Location: ../Externos/login.php');
 	}
 	
 	// Obtenemos el codigo logueado

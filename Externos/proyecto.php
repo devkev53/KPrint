@@ -24,7 +24,7 @@
 	$extraido = mysqli_fetch_array($execute);
 
 	if (!$extraido) {
-		header('location: ../404_page');
+		header('location: ../404_page.php');
 	}
  ?>
  <!DOCTYPE html>

@@ -2,7 +2,7 @@
 	session_start();
 
 	if (!isset($_SESSION['usuario'])) {
-			header('location: ../Externos/login');
+			header('location: ../Externos/login.php');
 	}
 
 	// Importamos la coneccion a la DB

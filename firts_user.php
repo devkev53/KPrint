@@ -12,7 +12,7 @@
 	$no_Users = $users->num_rows;
 
 	if ($no_Users!=0) {
-		header('location: Externos/login');
+		header('location: Externos/login.php');
 	}
 ?>
 <!DOCTYPE html>
