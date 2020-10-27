@@ -185,7 +185,7 @@
 																	$q_conn_img = mysqli_query($conn, $q_img_devs);
 
 																	while ($img_row = mysqli_fetch_array($q_conn_img)) {
-																	    echo "<img class='rounded-circle shadow p-1 mr-2 bg-white' width='50' src='../Internos/uploads/avatares/".$img_row['img']."''></img>";
+																	    echo "<img class='rounded-circle shadow p-1 mr-2 bg-white' width='70' src='../Internos/uploads/avatares/".$img_row['img']."''></img>";
 																    }
 															    }
 
