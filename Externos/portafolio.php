@@ -69,7 +69,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
+	<title>Portafolio | KodePrint</title>
+	<link rel="shortcut icon" href="../Recursos/img/kp_black.png">
 
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="../Recursos/Bootstrap/css/bootstrap.min.css">
