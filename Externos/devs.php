@@ -199,14 +199,6 @@
 							  	</ul>
 							</nav>
 
-							<!-- Boton de Agregar Usuario -->
-							<div class="col" align="center">
-								<button class="btn btn-outline-success mb-4" data-toggle="modal" data-target="#add_user_modal">
-									<i class="icon-add_circle"></i>
-									<b>Agregar Desarrollador</b>
-								</button>
-							</div>
-
 						<?php } ?>
 					</div>
 				</div>
