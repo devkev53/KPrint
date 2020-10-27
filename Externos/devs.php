@@ -206,6 +206,9 @@
 		</div>
 	</main>
 	
+	<div id="respuesta"></div>
+	<?php require '../footer.php' ?>
+	
 
 <!-- JQuery 3.5.1 -->
 <script src="../Recursos/Js/jquery-3.5.1.min.js"></script>
