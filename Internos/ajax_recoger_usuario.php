@@ -11,8 +11,6 @@
 	$user_con = mysqli_query($conn, $query_user_val);
 	$extraido = mysqli_fetch_array($user_con);
 
-	echo "hola Mundo";
-
 ?>
 <div class="col-12">
 	<input class="form-control" name="usuario" id="edit_username" type="text" 
