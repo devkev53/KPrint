@@ -277,7 +277,7 @@
 <script>
 
 	function eliminarUsuario(user, email, tipo){
-		if (tipo==0) {
+		if (tipo=="0") {
 			var data = "Esta seguro de eliminar al usuario: <b>"+user+"</b> de tipo: <b>Administrador</b>...?";
 		}else{
 			var data = "Esta seguro de eliminar al usuario: <b>"+user+"</b> de tipo: <b>Desarrollador</b>...?";
