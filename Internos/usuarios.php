@@ -125,7 +125,7 @@
 											}
 											if ($_SESSION['usuario']['tipo']==0) {
 												echo "<td class=\"text-center\"><button class=\"btn btn-warning\" onclick=\"editarUsuario('".$row['usuario']."','".$row['email']."','".$row['tipo']."')\"><i class=\"icon-edit1\"></i></button></td>";
-												echo "<td class=\"text-center\"><button class=\"btn btn-danger\" onclick=\"eliminarUsuario('".$row['usuario']."','".$row['email']."')\"><i class=\"icon-trash\"></i></button></td>";
+												echo "<td class=\"text-center\"><button class=\"btn btn-danger\" onclick=\"eliminarUsuario('".$row['usuario']."','".$row['email']."','".$row['tipo']."')\"><i class=\"icon-trash\"></i></button></td>";
 												echo "</tr>";
 											}else{
 											}
