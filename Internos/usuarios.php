@@ -162,14 +162,16 @@
 								    </li>
 							  	</ul>
 							</nav>
-
-							<!-- Boton de Agregar Usuario -->
+							
+							<?php if ($_SESSION['usuario']['tipo']==0) { ?>
+							<!-- Boton de Agregar Usuario -->	
 							<div class="col" align="center">
 								<button class="btn btn-outline-success mb-4" data-toggle="modal" data-target="#add_user_modal">
 									<i class="icon-add_circle"></i>
 									<b>Agregar Usuario</b>
 								</button>
 							</div>
+							<?php } ?>
 
 						<?php } ?>
 					</div>
